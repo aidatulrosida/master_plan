@@ -32,3 +32,20 @@ Jawaban:
 initState() untuk inisialisasi awal widget, seperti menyiapkan data atau listener.
 dispose() untuk membersihkan resource ketika widget dihapus, seperti menghentikan controller atau listener.
 
+---
+
+## 📷 Hasil Praktikum 2
+
+Soal!
+
+Jelaskan mana yang dimaksud InheritedWidget pada langkah 1 tersebut! Mengapa yang digunakan InheritedNotifier?
+Jelaskan maksud dari method di langkah 3 pada praktikum tersebut! Mengapa dilakukan demikian?
+Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
+
+Jawaban:
+1. Kita memakai InheritedNotifier karena widget bisa menerima pembaruan data secara otomatis setiap kali nilai dalam ValueNotifier<Plan> berubah. Dengan cara ini, tampilan UI akan langsung ter-update tanpa perlu memanggil setState() pada setiap perubahan data, sehingga alur data menjadi lebih rapi dan terpusat.
+
+2. Getter completedCount berfungsi menghitung berapa banyak tugas yang sudah ditandai selesai. Caranya dengan menyaring daftar tasks berdasarkan nilai task.complete yang bernilai true, lalu mengambil totalnya. Sementara itu, getter completenessMessage dipakai untuk menghasilkan teks ringkasan perkembangan. Pesan ini menampilkan informasi seperti “3 out of 5 tasks”, sehingga pengguna dapat melihat jumlah tugas selesai dibanding total tugas yang ada.
+
+3. Hasil (GIF)
+![GIF hasil praktikum](images/gifprak2.gif)
