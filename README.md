@@ -49,3 +49,19 @@ Jawaban:
 
 3. Hasil (GIF)
 ![GIF hasil praktikum](images/gifprak2.gif)
+
+## 📷 Hasil Praktikum 3
+
+Soal!
+
+1. Berdasarkan Praktikum 3 yang telah Anda lakukan, jelaskan maksud dari gambar diagram berikut ini!
+![Screenshot master_plan](images/soalprak3.png)  
+
+2. Lakukan capture hasil dari Langkah 14 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
+
+Jawaban:
+
+1.  Diagram tersebut menunjukkan alur navigasi dan struktur widget aplikasi Master Plan pada Praktikum 3. Bagian kiri menggambarkan halaman awal PlanCreatorScreen, yang terdiri dari MaterialApp → PlanProvider → PlanCreatorScreen → Column berisi TextField untuk menambah plan dan Expanded + ListView untuk menampilkan daftar plan. Sedangkan Bagian kanan menunjukkan PlanScreen, yaitu halaman detail yang muncul setelah pengguna memilih sebuah plan melalui Navigator.push(). Struktur widgetnya terdiri dari MaterialApp → Scaffold → Column dengan Expanded (ListView tugas) dan SafeArea (teks progres).
+
+2. Praktikum 3 sendiri menekankan penggunaan state management yang lebih maju dengan InheritedNotifier dan ValueNotifier, sehingga data seperti daftar plan dan task dapat diakses dan diperbarui antar beberapa widget tanpa harus terus menerus mengoper data melalui konstruktor.
+![GIF hasil praktikum](images/gifprak3.gif)
